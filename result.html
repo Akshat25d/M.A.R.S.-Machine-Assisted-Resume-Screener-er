@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <title>M.A.R.S - Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h2>📊 Screening Result</h2>
+        <div class="result-box">
+            <p><strong>🛠️ Skills Found:</strong> {{ data.skills }}</p>
+            <p><strong>📅 Years of Experience:</strong> {{ data.experience }}</p>
+            <p><strong>📌 Candidate Fit:</strong> {{ score }}</p>
+        </div>
+        <a href="/">⬅ Upload Another Resume</a>
+    </div>
+</body>
+
+</html>
+<!-- This is the result page that displays the analysis of the uploaded resume. -->
+<!-- It shows the skills found, years of experience, and candidate fit score. -->
+<!-- The user can return to the upload page to analyze another resume. -->
